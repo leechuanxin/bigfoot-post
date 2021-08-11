@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div>
+      <a href="/years">← Back to Years</a>
+      <!-- Create an <li> element for each user in users -->
+      <% sightings.forEach((keyValue, index) => { %>
+      <h1>Sighting <%= index + 1 %></h1>
+      <ul>
+        <% Object.entries(keyValue).forEach((keyValue2, index) => { %>
+        <li><%= keyValue2[0] %>: <%= keyValue2[1] %></li>
+        <% }); %>
+      </ul>
+      <% }); %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <ul>
+      <!-- Create an <li> element for each user in users -->
+      <% links.forEach((link, index) => { %>
+      <li><a href="/year-sighting/<%= link %>"><%= link %></a></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

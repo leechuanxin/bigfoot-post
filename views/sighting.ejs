@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <div>
+      <a href="/">← Back to Index</a>
+      <!-- Create an <li> element for each user in users -->
+      <% Object.entries(sighting).forEach((keyValue, index) => { %>
+      <p><%= keyValue[0] %>: <%= keyValue[1] %></p>
+      <% }); %>
+    </div>
+  </body>
+</html>
